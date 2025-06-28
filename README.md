@@ -5,19 +5,13 @@ This project is an **AI-powered HR assistant** that lets you ask natural languag
 - 💡 **Local LLMs** using [Mistral 7B via Ollama](https://ollama.com/)
 - ⚙️ **Streamlit** for a fast, interactive UI
 
-You can upload your own CSV file and get instant answers — from headcount, join/exit filters, salary stats, to department-level breakdowns!
-
 ---
 
 ## 📺 Demo Video
 
 🔗 **Watch on YouTube**: [https://youtu.be/ZDJxEy8Dvwk](https://youtu.be/ZDJxEy8Dvwk)
 
-[![Watch the demo](Sample_demo/app_interface.png)](https://youtu.be/ZDJxEy8Dvwk)
-
 ---
-
-## 📸 Screenshots
 
 ### ✅ Application Interface  
 ![App Interface](Sample_demo/app_interface.png)
@@ -28,67 +22,55 @@ You can upload your own CSV file and get instant answers — from headcount, joi
 
 - 🔍 Upload any employee dataset (`.csv`)
 - 💬 Ask natural language questions like:
-  - “How many employees joined in 2024?”
+  - “How many employees exited in 2023?”
   - “Show me average salary by department”
-  - “Who exited in the last 6 months?”
-- 📊 Get visual charts for trends like salary distribution, department counts, etc.
+  - "List departments with more than 5 employees."
+  - “What is the average salary in Engineering?”
+  - “Show employee count by department.”
+  - “Show me all employees who joined after January 2023.”
+  - Who joined in 2023?”
+  - “How many employees joined in 2024?”
+
+- 📊 Get visual charts for trends like department count
 - ⚡ Works fully **offline** using **local LLMs** via [Ollama](https://ollama.com)
-
----
-
-## 📁 Project Structure
-
-├── app.py ← Main Streamlit app
-├── data/
-│ └── employee_data.csv ← Sample HR dataset
-├── helpers/
-│ ├── llm_handler.py ← LLM interface (Mistral via Ollama)
-│ └── query_handler.py ← Rule-based query parser
-├── Sample_demo/
-│ ├── app_interface.png ← Screenshot of app
-│ └── Sample_demo.mp4 ← Optional video demo (YouTube used instead)
-├── requirements.txt
-└── README.md
-
 
 ---
 
 ## 🚀 How to Run the Project Locally
 
-### 1. Clone the Repo
+### 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/anandu91/hr-assistant-anandakrishnan.git
 cd hr-assistant-anandakrishnan
 
 
-2. Create and Activate Virtual Environment
+2️⃣ Create and Activate a Virtual Environment
 
+<details> <summary>🔵 Windows</summary>
 python -m venv venv
-.\venv\Scripts\activate    # For Windows
-# Or:
-# source venv/bin/activate  # For Mac/Linux
+.\venv\Scripts\activate
+</details> <details> <summary>🟢 Mac/Linux</summary>
+python3 -m venv venv
+source venv/bin/activate
+</details>
 
-3. Install Dependencies
-
+3️⃣ Install Required Dependencies
 pip install -r requirements.txt
 
-4. Start the Ollama Model
 
-Make sure you have Ollama installed and pull the model:
-
+4️⃣ Start the Ollama LLM
+Make sure Ollama is installed and the Mistral model is available.
 ollama run mistral
+💡 You can replace mistral with any other local model supported by Ollama.
 
-💡 You can replace mistral with any compatible local LLM model.
-
-5. Run the Streamlit App
-
+5️⃣ Launch the Streamlit App
 streamlit run app.py
+The app will open at: http://localhost:8501
 
-You will see a web interface open at http://localhost:8501 where you can upload a CSV and ask queries.
 
 💼 Sample Dataset
 
-Provided in data/employee_data.csv
+A sample file is available at: data/employee_data.csv
 
 
