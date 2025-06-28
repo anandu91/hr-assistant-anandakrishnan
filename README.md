@@ -119,6 +119,24 @@ streamlit run app.py
 
 ---
 
+### 📌 Query 1: “What is the average salary in Engineering?”
+![Average Salary Output](Sample_demo/output_avg_salary.png)
+
+---
+
+### 📌 Query 2: “List departments with more than 5 employees.”
+![Departments with More Than 5 Output](Sample_demo/output_dept_more_than_5.png)
+
+---
+
+### 📌 Query 3: “How many employees exited in 2023?”
+![Exits in 2023 Output](Sample_demo/output_exit_2023.png)
+
+---
+
+### 📌 Query 4: “Show me all employees who joined after January 2023.”
+![Join After 2023 Output](Sample_demo/output_joined_after_2023.png)
+
 ## 📂 Sample Dataset
 
 You can try it out using the provided sample CSV:
