@@ -1,0 +1,15 @@
+# Ignore Python virtual environments
+venv/
+
+# Bytecode cache
+__pycache__/
+*.pyc
+
+# macOS hidden files
+.DS_Store
+
+# Streamlit internal folders
+.streamlit/
+
+# VSCode settings (optional)
+.vscode/
