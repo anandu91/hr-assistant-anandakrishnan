@@ -119,8 +119,6 @@ streamlit run app.py
 
 ---
 
----
-
 ## 📂 Sample Dataset
 
 You can try it out using the provided sample CSV:
