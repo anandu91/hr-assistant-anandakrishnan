@@ -104,6 +104,21 @@ streamlit run app.py
 
 🌐 The app will open at: [http://localhost:8501](http://localhost:8501)
 
+
+---
+
+## ⚙️ Assumptions and Simplifications Made
+
+- The uploaded CSV must include the columns: `Name`, `Department`, `Join Date`, `Exit Date`, and `Salary`
+- All dates are assumed to be in the format `YYYY-MM-DD`
+- The assistant is optimized for HR-specific questions only (e.g., joiners, leavers, salary, department-wise analysis)
+- Queries are handled using a combination of rule-based logic and a local LLM (Mistral via Ollama)
+- Follow-up questions or multi-turn conversations are not supported
+- Visual charts are generated for specific query types only
+- The system is designed for use with mock/synthetic employee data — not real or sensitive information
+
+---
+
 ---
 
 ## 📂 Sample Dataset
@@ -113,11 +128,3 @@ You can try it out using the provided sample CSV:
 ```
 data/employee_data.csv
 ```
-
----
-
-## 💬 Questions or Contributions?
-
-Feel free to fork the repo, raise issues, or contribute your improvements!\
-Open to PRs and feedback 🙌
-
